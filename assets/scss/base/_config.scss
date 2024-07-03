@@ -1,0 +1,18 @@
+body {
+  color: $color-black;
+  font-family: 'Myriad Pro Regular';
+}
+
+.container {
+  max-width: 1400px;
+}
+
+body,
+
+a {
+  cursor: url(../images/cursor/maplestory.cur), default;
+}
+
+.m-underline {
+  text-decoration: underline;
+}
