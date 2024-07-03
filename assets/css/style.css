@@ -234,6 +234,12 @@ a {
     height: 150px;
   }
 }
+@media (max-width: 991px) {
+  .middle-contents .vote-box {
+    margin-bottom: -40px;
+    height: 200px;
+  }
+}
 .middle-contents .vote-box .input-bg {
   position: relative;
 }

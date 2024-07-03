@@ -138,6 +138,11 @@
             height: 150px;
         }
 
+        @media(max-width: 991px) {
+            margin-bottom: -40px;
+            height: 200px;
+        }
+
         .input-bg {
             position: relative;
 
