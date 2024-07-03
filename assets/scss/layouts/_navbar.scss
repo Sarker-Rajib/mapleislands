@@ -1,0 +1,77 @@
+.navigation {
+    width: 100%;
+
+    .top-nav {
+        padding: 5px 0px;
+        background: #0000005e;
+
+        input {
+            background: #fff;
+            border: 0;
+            border-radius: 5px;
+            padding: 5px;
+            height: 30px;
+            width: 180px;
+            font-family: 'Myriad Pro light';
+
+            &::placeholder {
+                color: #b53526;
+            }
+        }
+
+        button,
+        .login {
+            background: rgb(239, 59, 38);
+            background: linear-gradient(0deg, rgba(239, 59, 38, 1) 0%, rgba(195, 52, 39, 1) 100%);
+            border: 1px solid #fff;
+            border-radius: 5px;
+            padding: 2px 30px;
+            color: #fff;
+        }
+
+
+        .player-number {
+            background: #8fc342;
+            background: linear-gradient(180deg, #8fc342 0%, #f3ea1e 100%);
+            display: block;
+            border-radius: 20px;
+            color: #fff;
+            padding: 2px 15px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
+
+    .header {
+        background: url(../images/head-bg.png) top left/cover no-repeat;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+
+        .brand-logo {
+            width: 280px;
+
+            @media(max-width: 767px) {
+                width: 200px;
+            }
+        }
+
+        .navbar-nav {
+            .nav-link {
+                font-size: 16px;
+                font-family: 'Myriad Pro bold';
+                color: #fff;
+                margin: 2px;
+
+                &.active {
+                    border: 1px solid #fff;
+                    border-radius: 20px;
+                    padding-inline: 20px;
+                }
+
+                &:hover {
+                    color: #8fc342;
+                }
+            }
+        }
+    }
+}

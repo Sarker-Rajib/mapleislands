@@ -1,0 +1,183 @@
+.dp-card {
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 #000000b7;
+    padding: 15px;
+
+    .rounded-wrap {
+        height: 90px;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../images/dp-bg.png) no-repeat center center;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        box-shadow: 0 0 10px 0px #0000009c;
+        margin-right: 10px;
+
+        p {
+            color: #fff;
+            font-family: 'Myriad Pro bold';
+            font-size: 30px;
+        }
+    }
+
+    h3 {
+        color: #007699;
+        font-size: 25px;
+        font-family: 'Myriad Pro bold';
+    }
+
+    p {
+        color: #007699;
+        font-size: 14px;
+        font-family: 'Myriad Pro light';
+    }
+
+    button {
+        padding: 3px 15px;
+        border-radius: 15px;
+        font-family: 'Myriad Pro Semibold';
+        font-size: 14px;
+        color: #fff;
+        background: #8acda3;
+        background: linear-gradient(180deg, #8acda3 0%, #20b67d 100%);
+    }
+}
+
+.download-cards {
+    max-width: 850px;
+    margin-inline: auto;
+    padding-bottom: 20px;
+    margin-bottom: -240px;
+    position: relative;
+    z-index: 9;
+
+    @media (max-width:1400px) {
+        margin-bottom: -90px;
+    }
+
+    @media (max-width:767px) {
+        margin-bottom: -20px;
+    }
+
+    .down-card {
+        background: #dcdedf;
+        background: linear-gradient(180deg, #dcdedf 0%, #fff 100%);
+        box-shadow: 0px 0px 10px #00000077;
+        padding: 10px;
+        border-radius: 30px;
+        border-top: 2px solid #fff;
+
+        .num-wrap {
+            background: #fff03e;
+            background: linear-gradient(180deg, #fff03e 0%, #f9b02f 100%);
+            height: 90px;
+            min-width: 90px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 5px #00000077;
+            border: 2px solid #fff;
+
+            p {
+                color: #fff;
+                font-family: 'Myriad Pro bold';
+                font-size: 60px;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            color: #f04a24;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 5px 20px;
+            border-radius: 25px;
+            font-family: 'Myriad Pro Semibold';
+            font-size: 20px;
+            color: #fff;
+            background: #8ac640;
+            background: linear-gradient(180deg, #8ac640 0%, #21b24b 100%);
+            box-shadow: 0px 0px 10px #00000077;
+        }
+    }
+}
+
+.register-box {
+    max-width: 380px;
+    margin-inline: auto;
+    margin-bottom: -300px;
+    text-align: center;
+    border-radius: 25px;
+    border-top: 2px solid #fff;
+    padding: 20px;
+    position: relative;
+    z-index: 99;
+    background: #ffffff57;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 25px #00000063;
+    overflow: hidden;
+
+    .title {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        padding: 10px;
+        background: #dcdedf;
+        background: linear-gradient(180deg, #dcdedf 0%, #fff 100%);
+    }
+
+    @media(max-width:1800px) {
+        margin-bottom: -150px;
+    }
+
+    @media(max-width:1024px) {
+        margin-bottom: -90px;
+    }
+
+    @media(max-width: 767px) {
+        margin-bottom: -10px;
+    }
+
+    .input-bg {
+        position: relative;
+
+        input {
+            width: 200px;
+            border-radius: 20px;
+            padding: 5px 10px;
+            color: #000;
+            display: inline-block;
+            text-align: center;
+            border: none;
+            background: #ffffff;
+            box-shadow: inset 0px 0px 10px #00000080;
+
+            &::placeholder {
+                color: #000000;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: calc(100% + 10px);
+            height: calc(100% + 20px);
+            left: -5px;
+            top: -10px;
+            background: #dcdedf;
+            background: linear-gradient(180deg, #ffffff 0%, #f7c960 50%, #eb8680 100%);
+            box-shadow: 0px 0px 10px #00000080;
+            border-radius: 30px;
+            z-index: -1;
+        }
+    }
+}

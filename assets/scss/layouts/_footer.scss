@@ -8,4 +8,13 @@
     p {
         font-family: 'Myriad Pro light';
     }
+
+
+    @media(max-width: 767px) {
+
+
+        p {
+            font-size: 14px;
+        }
+    }
 }

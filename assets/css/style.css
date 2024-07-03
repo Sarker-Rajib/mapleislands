@@ -94,6 +94,75 @@ a {
 
 /*===// end of base css === */
 /*=== layouts css start === */
+.navigation {
+  width: 100%;
+}
+.navigation .top-nav {
+  padding: 5px 0px;
+  background: rgba(0, 0, 0, 0.368627451);
+}
+.navigation .top-nav input {
+  background: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  height: 30px;
+  width: 180px;
+  font-family: "Myriad Pro light";
+}
+.navigation .top-nav input::-moz-placeholder {
+  color: #b53526;
+}
+.navigation .top-nav input::placeholder {
+  color: #b53526;
+}
+.navigation .top-nav button,
+.navigation .top-nav .login {
+  background: rgb(239, 59, 38);
+  background: linear-gradient(0deg, rgb(239, 59, 38) 0%, rgb(195, 52, 39) 100%);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 2px 30px;
+  color: #fff;
+}
+.navigation .top-nav .player-number {
+  background: #8fc342;
+  background: linear-gradient(180deg, #8fc342 0%, #f3ea1e 100%);
+  display: block;
+  border-radius: 20px;
+  color: #fff;
+  padding: 2px 15px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.navigation .header {
+  background: url(../images/head-bg.png) top left/cover no-repeat;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.navigation .header .brand-logo {
+  width: 280px;
+}
+@media (max-width: 767px) {
+  .navigation .header .brand-logo {
+    width: 200px;
+  }
+}
+.navigation .header .navbar-nav .nav-link {
+  font-size: 16px;
+  font-family: "Myriad Pro bold";
+  color: #fff;
+  margin: 2px;
+}
+.navigation .header .navbar-nav .nav-link.active {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding-inline: 20px;
+}
+.navigation .header .navbar-nav .nav-link:hover {
+  color: #8fc342;
+}
+
 .footer {
   background: url(../images/footer/footer-bg.png) no-repeat top left/cover;
   padding: 20px 0;
@@ -104,110 +173,229 @@ a {
 .footer p {
   font-family: "Myriad Pro light";
 }
+@media (max-width: 767px) {
+  .footer p {
+    font-size: 14px;
+  }
+}
 
 /*===// end of layouts css === */
 /*=== components css start === */
+.dp-card {
+  border-radius: 30px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7176470588);
+  padding: 15px;
+}
+.dp-card .rounded-wrap {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/dp-bg.png) no-repeat center center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.6117647059);
+  margin-right: 10px;
+}
+.dp-card .rounded-wrap p {
+  color: #fff;
+  font-family: "Myriad Pro bold";
+  font-size: 30px;
+}
+.dp-card h3 {
+  color: #007699;
+  font-size: 25px;
+  font-family: "Myriad Pro bold";
+}
+.dp-card p {
+  color: #007699;
+  font-size: 14px;
+  font-family: "Myriad Pro light";
+}
+.dp-card button {
+  padding: 3px 15px;
+  border-radius: 15px;
+  font-family: "Myriad Pro Semibold";
+  font-size: 14px;
+  color: #fff;
+  background: #8acda3;
+  background: linear-gradient(180deg, #8acda3 0%, #20b67d 100%);
+}
+
+.download-cards {
+  max-width: 850px;
+  margin-inline: auto;
+  padding-bottom: 20px;
+  margin-bottom: -240px;
+  position: relative;
+  z-index: 9;
+}
+@media (max-width: 1400px) {
+  .download-cards {
+    margin-bottom: -90px;
+  }
+}
+@media (max-width: 767px) {
+  .download-cards {
+    margin-bottom: -20px;
+  }
+}
+.download-cards .down-card {
+  background: #dcdedf;
+  background: linear-gradient(180deg, #dcdedf 0%, #fff 100%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4666666667);
+  padding: 10px;
+  border-radius: 30px;
+  border-top: 2px solid #fff;
+}
+.download-cards .down-card .num-wrap {
+  background: #fff03e;
+  background: linear-gradient(180deg, #fff03e 0%, #f9b02f 100%);
+  height: 90px;
+  min-width: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4666666667);
+  border: 2px solid #fff;
+}
+.download-cards .down-card .num-wrap p {
+  color: #fff;
+  font-family: "Myriad Pro bold";
+  font-size: 60px;
+}
+.download-cards .down-card h3 {
+  font-size: 20px;
+}
+.download-cards .down-card p {
+  color: #f04a24;
+  font-size: 14px;
+}
+.download-cards .down-card button {
+  padding: 5px 20px;
+  border-radius: 25px;
+  font-family: "Myriad Pro Semibold";
+  font-size: 20px;
+  color: #fff;
+  background: #8ac640;
+  background: linear-gradient(180deg, #8ac640 0%, #21b24b 100%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4666666667);
+}
+
+.register-box {
+  max-width: 380px;
+  margin-inline: auto;
+  margin-bottom: -300px;
+  text-align: center;
+  border-radius: 25px;
+  border-top: 2px solid #fff;
+  padding: 20px;
+  position: relative;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.3411764706);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3882352941);
+  overflow: hidden;
+}
+.register-box .title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  background: #dcdedf;
+  background: linear-gradient(180deg, #dcdedf 0%, #fff 100%);
+}
+@media (max-width: 1800px) {
+  .register-box {
+    margin-bottom: -150px;
+  }
+}
+@media (max-width: 1024px) {
+  .register-box {
+    margin-bottom: -90px;
+  }
+}
+@media (max-width: 767px) {
+  .register-box {
+    margin-bottom: -10px;
+  }
+}
+.register-box .input-bg {
+  position: relative;
+}
+.register-box .input-bg input {
+  width: 200px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  background: #ffffff;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5019607843);
+}
+.register-box .input-bg input::-moz-placeholder {
+  color: #000000;
+}
+.register-box .input-bg input::placeholder {
+  color: #000000;
+}
+.register-box .input-bg::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 10px);
+  height: calc(100% + 20px);
+  left: -5px;
+  top: -10px;
+  background: #dcdedf;
+  background: linear-gradient(180deg, #ffffff 0%, #f7c960 50%, #eb8680 100%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5019607843);
+  border-radius: 30px;
+  z-index: -1;
+}
+
 /*===// end of components css === */
-.top-part-with-header {
+.top-part {
   background: url(../images/bg-shade-ash.png) center center/cover no-repeat;
   position: relative;
 }
-.top-part-with-header .navigation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.top-part-with-header .navigation .top-nav {
-  padding: 5px 0px;
-  background: rgba(0, 0, 0, 0.368627451);
-}
-.top-part-with-header .navigation .top-nav input {
-  background: #fff;
-  border: 0;
-  border-radius: 5px;
-  padding: 5px;
-  height: 30px;
-  width: 180px;
-  font-family: "Myriad Pro light";
-}
-.top-part-with-header .navigation .top-nav input::-moz-placeholder {
-  color: #b53526;
-}
-.top-part-with-header .navigation .top-nav input::placeholder {
-  color: #b53526;
-}
-.top-part-with-header .navigation .top-nav button,
-.top-part-with-header .navigation .top-nav .login {
-  background: rgb(239, 59, 38);
-  background: linear-gradient(0deg, rgb(239, 59, 38) 0%, rgb(195, 52, 39) 100%);
-  border: 1px solid #fff;
-  border-radius: 5px;
-  padding: 2px 30px;
-  color: #fff;
-}
-.top-part-with-header .navigation .top-nav .player-number {
-  background: #8fc342;
-  background: linear-gradient(180deg, #8fc342 0%, #f3ea1e 100%);
-  display: block;
-  border-radius: 20px;
-  color: #fff;
-  padding: 2px 15px;
-  font-size: 14px;
-  margin-left: 10px;
-}
-.top-part-with-header .navigation .header {
-  background: url(../images/head-bg.png) top left/cover no-repeat;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-}
-.top-part-with-header .navigation .header .brand-logo {
-  width: 280px;
-}
-@media (max-width: 767px) {
-  .top-part-with-header .navigation .header .brand-logo {
-    width: 200px;
-  }
-}
-.top-part-with-header .navigation .header .navbar-nav .nav-link {
-  font-size: 16px;
-  font-family: "Myriad Pro bold";
-  color: #fff;
-  margin: 2px;
-}
-.top-part-with-header .navigation .header .navbar-nav .nav-link.active {
-  border: 1px solid #fff;
-  border-radius: 20px;
-  padding-inline: 20px;
-}
-.top-part-with-header .navigation .header .navbar-nav .nav-link:hover {
-  color: #8fc342;
-}
-.top-part-with-header .text {
+.top-part .text {
   padding: 45px 0 35px;
 }
 @media (max-width: 767px) {
-  .top-part-with-header .text {
+  .top-part .text {
     padding: 20px 0 35px;
   }
 }
-.top-part-with-header .text h2 {
+.top-part .text h2 {
   font-family: "Myriad Pro light";
   font-size: 42px;
   text-decoration: underline;
   padding-bottom: 10px;
 }
-.top-part-with-header .text p {
+.top-part .text p {
   font-family: "Myriad Pro light";
   font-size: 22px;
   line-height: 25px;
 }
 @media (max-width: 767px) {
-  .top-part-with-header .text h2 {
+  .top-part .text h2 {
     font-size: 35px;
   }
-  .top-part-with-header .text p {
+  .top-part .text p {
     font-size: 18px;
+  }
+}
+@media (max-width: 545px) {
+  .top-part .text h2 {
+    font-size: 30px;
+  }
+  .top-part .text p {
+    font-size: 15px;
   }
 }
 
@@ -227,6 +415,9 @@ a {
   border: 2px solid #fff;
   position: relative;
   z-index: 99;
+}
+.middle-contents .vote-box.donate-bx {
+  background: url(../images/bg22.png) no-repeat center center/cover;
 }
 @media (max-width: 767px) {
   .middle-contents .vote-box {
@@ -269,4 +460,19 @@ a {
   background: linear-gradient(90deg, rgb(242, 97, 47) 0%, rgb(255, 255, 255) 50%, rgb(242, 97, 47) 100%);
   border-radius: 30px;
   z-index: -1;
+}
+.middle-contents .cardss {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .middle-contents .cardss {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .middle-contents .cardss {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */
