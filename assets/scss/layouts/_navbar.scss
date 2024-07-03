@@ -47,11 +47,87 @@
         border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
 
+
+        .brand-logo-wrap {
+            animation: logoMove 5s infinite linear;
+        }
+
         .brand-logo {
             width: 280px;
+            // animation: logoMove 5s infinite linear;
 
             @media(max-width: 767px) {
                 width: 200px;
+            }
+        }
+
+        @keyframes logoMove {
+
+            0% {
+                transform: rotate(0deg);
+                box-shadow: #8fc3425d 0 0 15px;
+            }
+
+            14% {
+                background: #2183624f;
+            }
+
+            15% {
+                background: #00000000;
+                box-shadow: none;
+            }
+
+            16% {
+                background: #2183624f;
+                box-shadow: #cc8d195d 0 0 15px;
+            }
+
+            17% {
+                background: #00000000;
+                box-shadow: none;
+            }
+
+            25% {
+                transform: rotate(1deg);
+                background: transparent;
+            }
+
+            34% {
+                background: #2a758b4f;
+                box-shadow: #8fc3425d 0 0 15px;
+
+            }
+
+            35% {
+                background: #00000000;
+                box-shadow: none;
+            }
+
+            50% {
+                transform: rotate(0deg);
+
+            }
+
+            75% {
+                transform: rotate(-1deg);
+                background: transparent;
+
+            }
+
+            78% {
+                background: #2a758b4f;
+                box-shadow: #8fc3425d 0 0 15px;
+
+            }
+
+            79% {
+                background: #00000000;
+                box-shadow: none;
+            }
+
+            100% {
+                transform: rotate(0deg);
+
             }
         }
 
