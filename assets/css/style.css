@@ -358,6 +358,116 @@ a {
   z-index: -1;
 }
 
+.update-card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5019607843);
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+}
+.update-card .image {
+  position: relative;
+}
+.update-card .image .upadate {
+  font-family: "Myriad Pro bold";
+  display: inline-block;
+  padding: 5px 15px;
+  background: #fff037;
+  background: linear-gradient(180deg, #fff037 0%, #fbb62a 100%);
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  color: #000;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.update-card .c-text {
+  padding: 15px 15px 30px;
+  position: relative;
+  height: 100%;
+}
+.update-card .c-text h4 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+.update-card .c-text .link-m {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.home-banner {
+  position: relative;
+}
+.home-banner .welcome {
+  width: 100%;
+  max-width: 850px;
+  margin-inline: auto;
+  background: rgba(0, 0, 0, 0.2823529412);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 25px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  text-align: center;
+  padding: 40px 20px;
+  border: 2px solid #fff;
+  color: #fff;
+  top: 250px;
+}
+.home-banner .welcome h1 {
+  font-size: 50px;
+  font-family: "Myriad Pro bold";
+}
+.home-banner .welcome button {
+  color: #fff;
+  font-size: 25px;
+  font-family: "Myriad Pro bold";
+  border: 1px solid #FFF;
+  border-radius: 30px;
+  padding: 5px 25px;
+  position: relative;
+}
+.home-banner .welcome button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 2px;
+  bottom: 2px;
+  border: 1px solid #9acb4c;
+  border-radius: 30px;
+}
+.home-banner .welcome p {
+  padding: 15px 0;
+  font-size: 25px;
+  font-family: "Myriad Pro Semibold";
+}
+@media (max-width: 1100px) {
+  .home-banner {
+    padding-bottom: 50px;
+  }
+  .home-banner .welcome {
+    top: 150px;
+  }
+  .home-banner .welcome p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .home-banner {
+    padding-bottom: 300px;
+  }
+  .home-banner .welcome {
+    top: 100px;
+  }
+  .home-banner .welcome p {
+    font-size: 20px;
+  }
+}
+
 /*===// end of components css === */
 .top-part {
   background: url(../images/bg-shade-ash.png) center center/cover no-repeat;
@@ -474,5 +584,22 @@ a {
 @media (max-width: 767px) {
   .middle-contents .cardss {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.update-section {
+  margin-top: -100px;
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 9;
+}
+@media (max-width: 991px) {
+  .update-section {
+    margin-bottom: -40px;
+  }
+}
+@media (max-width: 767px) {
+  .update-section {
+    margin-bottom: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
