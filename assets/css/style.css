@@ -141,62 +141,84 @@ a {
   border-bottom: 1px solid #fff;
 }
 .navigation .header .brand-logo-wrap {
-  animation: logoMove 5s infinite linear;
+  animation: logoMove 5s linear infinite;
 }
-.navigation .header .brand-logo {
+.navigation .header .brand-logo-wrap .brand-logo {
   width: 280px;
 }
 @media (max-width: 767px) {
-  .navigation .header .brand-logo {
+  .navigation .header .brand-logo-wrap .brand-logo {
     width: 200px;
+  }
+}
+.navigation .header .brand-logo-wrap .brand-logo-text {
+  font-family: "SpookyZombie";
+  color: rgba(173, 37, 37, 0);
+  font-size: 47px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  animation: logoTextMove 5s infinite linear;
+}
+@media (max-width: 767px) {
+  .navigation .header .brand-logo-wrap .brand-logo-text {
+    font-size: 33.5px;
+  }
+}
+@keyframes logoTextMove {
+  12% {
+    text-shadow: none;
+  }
+  14% {
+    text-shadow: orange 0 0 15px;
+  }
+  15% {
+    text-shadow: none;
+  }
+  16% {
+    text-shadow: orangered 0 0 15px;
+  }
+  17% {
+    text-shadow: none;
+  }
+  53% {
+    text-shadow: none;
+  }
+  54% {
+    text-shadow: orange 0 0 15px;
+  }
+  55% {
+    text-shadow: none;
+  }
+  56% {
+    text-shadow: orangered 0 0 15px;
+  }
+  57% {
+    text-shadow: none;
+  }
+  77% {
+    text-shadow: none;
+  }
+  78% {
+    text-shadow: orangered 0 0 15px;
+  }
+  79% {
+    text-shadow: none;
   }
 }
 @keyframes logoMove {
   0% {
     transform: rotate(0deg);
-    box-shadow: rgba(143, 195, 66, 0.3647058824) 0 0 15px;
-  }
-  14% {
-    background: rgba(33, 131, 98, 0.3098039216);
-  }
-  15% {
-    background: rgba(0, 0, 0, 0);
-    box-shadow: none;
-  }
-  16% {
-    background: rgba(33, 131, 98, 0.3098039216);
-    box-shadow: rgba(204, 141, 25, 0.3647058824) 0 0 15px;
-  }
-  17% {
-    background: rgba(0, 0, 0, 0);
-    box-shadow: none;
   }
   25% {
     transform: rotate(1deg);
-    background: transparent;
-  }
-  34% {
-    background: rgba(42, 117, 139, 0.3098039216);
-    box-shadow: rgba(143, 195, 66, 0.3647058824) 0 0 15px;
-  }
-  35% {
-    background: rgba(0, 0, 0, 0);
-    box-shadow: none;
   }
   50% {
     transform: rotate(0deg);
   }
   75% {
     transform: rotate(-1deg);
-    background: transparent;
-  }
-  78% {
-    background: rgba(42, 117, 139, 0.3098039216);
-    box-shadow: rgba(143, 195, 66, 0.3647058824) 0 0 15px;
-  }
-  79% {
-    background: rgba(0, 0, 0, 0);
-    box-shadow: none;
   }
   100% {
     transform: rotate(0deg);
@@ -523,25 +545,6 @@ a {
 }
 
 /*===// end of components css === */
-.brand-logo-wrap .brand-logo {
-  font-family: "SpookyZombie";
-  color: #fff;
-  font-size: 50px;
-  text-shadow: 3px 2px 3px #e6db8a;
-  display: inline-block;
-  position: relative;
-}
-.brand-logo-wrap .brand-logo::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 35px;
-  height: 35px;
-  background: url(../images/icon.png);
-  z-index: 1;
-}
-
 .top-part {
   background: url(../images/bg-shade-ash.png) center center/cover no-repeat;
   position: relative;

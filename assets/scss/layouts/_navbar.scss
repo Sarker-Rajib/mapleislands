@@ -49,59 +49,97 @@
 
 
         .brand-logo-wrap {
-            animation: logoMove 5s infinite linear;
+            animation: logoMove 5s linear infinite;
+
+            .brand-logo {
+                width: 280px;
+
+                @media(max-width: 767px) {
+                    width: 200px;
+                }
+            }
+
+            .brand-logo-text {
+                font-family: 'SpookyZombie';
+                color: #ad252500;
+                font-size: 47px;
+                display: inline-block;
+                position: absolute;
+                top: 10px;
+                left: 2px;
+                animation: logoTextMove 5s infinite linear;
+
+                @media(max-width: 767px) {
+                    font-size: 33.5px;
+                }
+            }
         }
 
-        .brand-logo {
-            width: 280px;
-            // animation: logoMove 5s infinite linear;
+        @keyframes logoTextMove {
 
-            @media(max-width: 767px) {
-                width: 200px;
+            12% {
+                text-shadow: none;
             }
+
+            14% {
+                text-shadow: orange 0 0 15px;
+            }
+
+            15% {
+                text-shadow: none;
+            }
+
+            16% {
+                text-shadow: orangered 0 0 15px;
+            }
+
+            17% {
+                text-shadow: none;
+            }
+
+            53% {
+                text-shadow: none;
+            }
+            54% {
+                text-shadow: orange 0 0 15px;
+            }
+            55% {
+                text-shadow: none;
+            }
+
+            56% {
+                text-shadow: orangered 0 0 15px;
+            }
+
+            57% {
+                text-shadow: none;
+            }
+
+            77% {
+                text-shadow: none;
+            }
+
+            78% {
+                text-shadow: orangered 0 0 15px;
+            }
+
+            79% {
+                text-shadow: none;
+            }
+
         }
 
         @keyframes logoMove {
 
             0% {
                 transform: rotate(0deg);
-                box-shadow: #8fc3425d 0 0 15px;
             }
 
-            14% {
-                background: #2183624f;
-            }
-
-            15% {
-                background: #00000000;
-                box-shadow: none;
-            }
-
-            16% {
-                background: #2183624f;
-                box-shadow: #cc8d195d 0 0 15px;
-            }
-
-            17% {
-                background: #00000000;
-                box-shadow: none;
-            }
 
             25% {
                 transform: rotate(1deg);
-                background: transparent;
             }
 
-            34% {
-                background: #2a758b4f;
-                box-shadow: #8fc3425d 0 0 15px;
-
-            }
-
-            35% {
-                background: #00000000;
-                box-shadow: none;
-            }
 
             50% {
                 transform: rotate(0deg);
@@ -110,24 +148,11 @@
 
             75% {
                 transform: rotate(-1deg);
-                background: transparent;
-
             }
 
-            78% {
-                background: #2a758b4f;
-                box-shadow: #8fc3425d 0 0 15px;
-
-            }
-
-            79% {
-                background: #00000000;
-                box-shadow: none;
-            }
 
             100% {
                 transform: rotate(0deg);
-
             }
         }
 
