@@ -141,7 +141,7 @@ a {
   border-bottom: 1px solid #fff;
 }
 .navigation .header .brand-logo-wrap {
-  animation: logoMove 5s linear infinite;
+  animation: logoMove 4s linear infinite 1s;
 }
 .navigation .header .brand-logo-wrap .brand-logo {
   width: 280px;
@@ -151,77 +151,21 @@ a {
     width: 200px;
   }
 }
-.navigation .header .brand-logo-wrap .brand-logo-text {
-  font-family: "SpookyZombie";
-  color: rgba(173, 37, 37, 0);
-  font-size: 47px;
-  display: inline-block;
-  position: absolute;
-  top: 10px;
-  left: 2px;
-  animation: logoTextMove 5s infinite linear;
-}
-@media (max-width: 767px) {
-  .navigation .header .brand-logo-wrap .brand-logo-text {
-    font-size: 33.5px;
-  }
-}
-@keyframes logoTextMove {
-  12% {
-    text-shadow: none;
-  }
-  14% {
-    text-shadow: orange 0 0 15px;
-  }
-  15% {
-    text-shadow: none;
-  }
-  16% {
-    text-shadow: orangered 0 0 15px;
-  }
-  17% {
-    text-shadow: none;
-  }
-  53% {
-    text-shadow: none;
-  }
-  54% {
-    text-shadow: orange 0 0 15px;
-  }
-  55% {
-    text-shadow: none;
-  }
-  56% {
-    text-shadow: orangered 0 0 15px;
-  }
-  57% {
-    text-shadow: none;
-  }
-  77% {
-    text-shadow: none;
-  }
-  78% {
-    text-shadow: orangered 0 0 15px;
-  }
-  79% {
-    text-shadow: none;
-  }
-}
 @keyframes logoMove {
   0% {
-    transform: rotate(0deg);
+    transform: scale(0.2);
   }
-  25% {
-    transform: rotate(1deg);
+  20% {
+    transform: scale(1);
   }
   50% {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
   75% {
-    transform: rotate(-1deg);
+    transform: scale(1);
   }
   100% {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
 }
 .navigation .header .navbar-nav .nav-link {
