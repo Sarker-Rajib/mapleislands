@@ -5,35 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MapleIislands || Vote</title>
+  <title>MapleIislands || Login</title>
   <link rel='shortcut icon' href='assets/images/icon.png' type='image/x-icon'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+  <!-- header -->
   <div class="navigation fixed-top">
-    <div class="top-nav">
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
-          <div class="login-option d-none d-lg-block">
-            <input type="text" placeholder="Enter your username">
-            <input type="text" placeholder="Enter your Password">
-            <button>Login</button>
-            <a href="#" class="text-white m-underline">Forgot Password</a>
-          </div>
-          <div class="login-option d-lg-none">
-            <a href="login.html" class="login text-white m-underline">Login</a>
-          </div>
-          <p class="d-flex align-items-center">
-            <span class="text-white">Online Players:</span>
-            <span class="player-number">1120</span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <header class="header">
+    <header class="header border-0">
       <div class="container">
         <nav class="navbar py-1 navbar-expand-lg">
           <a href="#" class="brand-logo-wrap">
@@ -46,7 +27,7 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">HOME</a>
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="mapleislands-register.html">REGISTER</a>
@@ -64,7 +45,7 @@
                 <a class="nav-link" href="ranking.html">RANKING</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="mapleislands-vote.html">VOTE</a>
+                <a class="nav-link" href="mapleislands-vote.html">VOTE</a>
               </li>
             </ul>
           </div>
@@ -73,37 +54,43 @@
     </header>
   </div>
 
-  <div class="top-part">
-    <img src="assets/images/newVote-top.png" alt="newvote" class="w-100 img-fluid">
+  <!-- middle section -->
+  <main>
+    <div class="login"
+      style="min-height: 100vh; background: url(assets/images/bg-shade-ash.png); padding-top: 50px; margin-bottom: 100px;">
+      <div class="register-block mt-5 mx-auto text-center bg-white p-3 rounded" style="max-width: 320px;">
+        <h1 class="pb-4" style="font-size: 18pt;  color: #474747; padding-top: 20px;">MapleIsland
+          - Login</h1>
+        <form action="login.php" method="post" class="loguspas">
+          <p style="color: #000; font-size: 12pt;  padding-bottom: 5px;">
+            Username
+          </p>
+          <input type="text" name="user" class="form-control" placeholder="Username">
+          <p style="color: #000; font-size: 12pt; padding-block: 5px;">
+            Password
+          </p>
+          <input type="password" name="pass" class="form-control" placeholder="Password"><br>
 
-    <div class="text text-center">
-      <h2>Vote To MapleIslands</h2>
-      <p>You can vote for us once every 12 hours. <br>
-        Each vote give you 3 votepoints that you can redeem in the game by using: @CliamVP. <br>
-        You need to disable Adblock to be able to vote.</p>
-    </div>
-  </div>
+          <a href="" style="color: #000; font-size: 11pt; padding-bottom: 15px; padding-top: 5px; display: block;">
+            By
+            Login, you agree to MapleIsland Terms of Service.
+          </a>
+          <a class="#" style="color: black; font-weight: bold;" href="#">Forgot password?</a>
+          <br>
+          <button class="btn text-white px-5 mt-3" style="background: rgb(239, 59, 38);
+    background: linear-gradient(0deg, rgb(239, 59, 38) 0%, rgb(195, 52, 39) 100%);">Log
+            In
+          </button>
 
-
-  <div class="middle-contents">
-
-    <div class="vote-box">
-      <div class="text-center">
-        <span class="input-bg">
-          <input type="text" placeholder="Please input your username">
-        </span>
-        <br>
-        <button class="btn text-white mt-2"> Vote Now! &#8250</button>
+        </form>
       </div>
     </div>
-
-
-    <img src="assets/images/newVote-bottom.png" alt="img2" class="w-100 img-fluid">
-  </div>
+  </main>
+  <!-- middle section ends -->
 
 
   <!-- footer -->
-  <footer class="footer">
+  <footer class="footer fixed-bottom">
     <div class="container">
       <div class="d-md-flex align-items-center justify-content-between">
         <div class="pb-2 pb-lg-0">
